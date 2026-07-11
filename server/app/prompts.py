@@ -26,3 +26,23 @@ Do not explain anything.
 
 Return JSON only.
 """
+JOB_MATCH_PROMPT = """
+You are an expert ATS and Hiring Manager.
+
+Compare the candidate's resume with the job description.
+
+Return ONLY valid JSON.
+
+{
+  "match_score": 0,
+  "keyword_score": 0,
+  "matched_skills": [],
+  "missing_skills": [],
+  "recommendations": [],
+  "summary": ""
+}
+
+Do not explain anything.
+
+Return JSON only.
+"""
